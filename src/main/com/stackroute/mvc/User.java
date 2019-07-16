@@ -1,13 +1,23 @@
 package com.stackroute.mvc;
 
-public class User {
-    String name;
+import org.springframework.stereotype.Component;
 
-    public User(String name) {
-        this.name = name;
-    }
+
+public class User {
+    private String name;
+
+   public User()
+   {
+
+   }
 
     public String getName() {
         return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
 }
